@@ -59,8 +59,9 @@ export default function IndustriesListingPage() {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </main>

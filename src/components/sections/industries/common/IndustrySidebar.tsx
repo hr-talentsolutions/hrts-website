@@ -9,7 +9,12 @@ import {
   Stethoscope, 
   ShoppingBag, 
   Factory, 
-  ChevronRight 
+  ChevronRight,
+  Smartphone,
+  GraduationCap,
+  Truck,
+  Film,
+  Store
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
