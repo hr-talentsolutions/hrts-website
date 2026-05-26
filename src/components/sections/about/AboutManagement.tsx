@@ -10,13 +10,13 @@ const MANAGEMENT = [
     name: "Narendra Kotti",
     designation: "CEO",
     image: "/images/about/narendra.jpg",
-    linkedin: "https://www.linkedin.com/in/narendra-kotti/"
+    linkedin: "https://www.linkedin.com/in/narendra-kotti-15863318b/"
   },
   {
     name: "KVS Rajani Kant",
     designation: "AVP HR Operations",
     image: "/images/about/rajani.jpg",
-    linkedin: "https://www.linkedin.com/in/rajani-kant/"
+    linkedin: "https://www.linkedin.com/in/kvsrajanikant/
   }
 ];
 
