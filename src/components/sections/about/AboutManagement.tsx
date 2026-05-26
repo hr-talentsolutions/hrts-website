@@ -16,7 +16,7 @@ const MANAGEMENT = [
     name: "KVS Rajani Kant",
     designation: "AVP HR Operations",
     image: "/images/about/rajani.jpg",
-    linkedin: "https://www.linkedin.com/in/kvsrajanikant/
+    linkedin: "https://www.linkedin.com/in/kvsrajanikant/"
   }
 ];
 
