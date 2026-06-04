@@ -20,6 +20,7 @@ const NAV_LINKS = [
         { name: "RPO", href: "/services/rpo" },
         { name: "Talent Acquisition", href: "/services/talent-acquisition" },
         { name: "Staffing", href: "/services/staffing" },
+        { name: "Tech Staffing", href: "/services/tech-staffing" },
         { name: "Payroll", href: "/services/payroll" },
         { name: "Compliance", href: "/services/compliance" },
       ]

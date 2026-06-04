@@ -11,7 +11,8 @@ import {
   Briefcase, 
   CreditCard, 
   Scale,
-  ChevronRight
+  ChevronRight,
+  Cpu
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +21,7 @@ const SERVICES = [
   { name: "RPO", href: "/services/rpo", icon: Workflow },
   { name: "Talent Acquisition", href: "/services/talent-acquisition", icon: Search },
   { name: "Staffing Solutions", href: "/services/staffing", icon: Briefcase },
+  { name: "Tech Staffing", href: "/services/tech-staffing", icon: Cpu },
   { name: "Payroll Management", href: "/services/payroll", icon: CreditCard },
   { name: "Compliance & Legal", href: "/services/compliance", icon: Scale },
 ];

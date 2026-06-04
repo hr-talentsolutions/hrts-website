@@ -38,11 +38,11 @@ export const Footer = () => {
           <div>
             <h4 className="font-black text-lg mb-8 tracking-tight text-white">Our Services</h4>
             <ul className="space-y-4 text-white/50 text-sm font-bold">
-              <li><Link href="#services" className="hover:text-white hover:pl-2 transition-all">Talent Acquisition</Link></li>
-              <li><Link href="#services" className="hover:text-white hover:pl-2 transition-all">Staffing Solutions</Link></li>
-              <li><Link href="#services" className="hover:text-white hover:pl-2 transition-all">Payroll Management</Link></li>
-              <li><Link href="#services" className="hover:text-white hover:pl-2 transition-all">Compliance Services</Link></li>
-              <li><Link href="#services" className="hover:text-white hover:pl-2 transition-all">Workforce Mgmt</Link></li>
+              <li><Link href="/services/talent-acquisition" className="hover:text-white hover:pl-2 transition-all">Talent Acquisition</Link></li>
+              <li><Link href="/services/staffing" className="hover:text-white hover:pl-2 transition-all">Staffing Solutions</Link></li>
+              <li><Link href="/services/tech-staffing" className="hover:text-white hover:pl-2 transition-all">Tech Staffing</Link></li>
+              <li><Link href="/services/payroll" className="hover:text-white hover:pl-2 transition-all">Payroll Management</Link></li>
+              <li><Link href="/services/compliance" className="hover:text-white hover:pl-2 transition-all">Compliance Services</Link></li>
             </ul>
           </div>
 
