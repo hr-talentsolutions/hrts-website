@@ -12,21 +12,21 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about-us" },
-  { 
-    name: "Services", 
+  {
+    name: "Services",
     href: "#services",
-      dropdown: [
-        { name: "Manpower Outsourcing", href: "/services/manpower-outsourcing" },
-        { name: "RPO", href: "/services/rpo" },
-        { name: "Talent Acquisition", href: "/services/talent-acquisition" },
-        { name: "Staffing", href: "/services/staffing" },
-        { name: "Tech Staffing", href: "/services/tech-staffing" },
-        { name: "Payroll", href: "/services/payroll" },
-        { name: "Compliance", href: "/services/compliance" },
-      ]
+    dropdown: [
+      { name: "Manpower Outsourcing", href: "/services/manpower-outsourcing" },
+      { name: "RPO", href: "/services/rpo" },
+      { name: "Talent Acquisition", href: "/services/talent-acquisition" },
+      { name: "Staffing", href: "/services/staffing" },
+      { name: "Tech Staffing", href: "/services/tech-staffing" },
+      { name: "Payroll", href: "/services/payroll" },
+      { name: "Compliance", href: "/services/compliance" },
+    ]
   },
-  { 
-    name: "Industries", 
+  {
+    name: "Industries",
     href: "#industries",
     dropdown: [
       { name: "BFSI", href: "/industries/bfsi" },
@@ -85,8 +85,8 @@ export const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-6">
           {NAV_LINKS.map((link) => (
-            <div 
-              key={link.name} 
+            <div
+              key={link.name}
               className="relative group"
               onMouseEnter={() => setActiveDropdown(link.name)}
               onMouseLeave={() => setActiveDropdown(null)}
@@ -117,8 +117,8 @@ export const Navbar = () => {
                               href={item.href}
                               className={cn(
                                 "text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200",
-                                isItemActive 
-                                  ? "text-primary bg-primary/10" 
+                                isItemActive
+                                  ? "text-primary bg-primary/10"
                                   : "text-text-sub hover:text-primary hover:bg-primary/5"
                               )}
                             >
@@ -142,7 +142,7 @@ export const Navbar = () => {
             href="/jobs"
             className="relative overflow-hidden inline-flex items-center px-5 h-11 rounded-full border-2 border-primary text-primary font-bold text-sm hover:text-white group"
           >
-            <span className="relative z-10">Jobs</span>
+            <span className="relative z-10">Jobs Selection</span>
             <span className="absolute inset-0 bg-primary scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out rounded-full" />
             <span className="absolute top-0 left-[-60%] w-1/3 h-full bg-white/30 skew-x-[-20deg] group-hover:left-[140%] transition-all duration-700 ease-out delay-100" />
           </a>
