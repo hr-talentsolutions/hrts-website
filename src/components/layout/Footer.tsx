@@ -37,6 +37,8 @@ export const Footer = () => {
                 >
                   <Icon size={22} className="group-hover:scale-110 transition-transform" />
                 </a>
+
+
               ))}
             </div>
           </div>
