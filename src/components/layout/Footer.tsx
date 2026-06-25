@@ -22,10 +22,17 @@ export const Footer = () => {
               India's leading workforce solutions partner, transforming business growth through elite talent acquisition, statutory compliance, and strategic HR management.
             </p>
             <div className="flex gap-5">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61583921061860" },
+                { Icon: Twitter, href: "https://x.com/hrts_pvt_ltd" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/hr-talent-solutions-pvt-ltd/" },
+                { Icon: Instagram, href: "https://www.instagram.com/hrtalentsolutions.in/" }
+              ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all shadow-sm group"
                 >
                   <Icon size={22} className="group-hover:scale-110 transition-transform" />
