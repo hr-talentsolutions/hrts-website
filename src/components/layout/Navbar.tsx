@@ -41,6 +41,7 @@ const NAV_LINKS = [
       { name: "FMCG / FMCD / Retail", href: "/industries/fmcg-fmcd-retail" },
     ]
   },
+  { name: "Investors", href: "/investors" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -142,7 +143,7 @@ export const Navbar = () => {
             href="/jobs"
             className="relative overflow-hidden inline-flex items-center px-5 h-11 rounded-full border-2 border-primary text-primary font-bold text-sm hover:text-white group"
           >
-            <span className="relative z-10">Jobs Selection</span>
+            <span className="relative z-10">Jobs</span>
             <span className="absolute inset-0 bg-primary scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out rounded-full" />
             <span className="absolute top-0 left-[-60%] w-1/3 h-full bg-white/30 skew-x-[-20deg] group-hover:left-[140%] transition-all duration-700 ease-out delay-100" />
           </a>
