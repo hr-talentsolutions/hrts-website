@@ -36,7 +36,35 @@ const STATUTORY = [
   { name: "Certificate of Incorporation (COI)", date: "Certificate", size: "450 KB", path: "/downloads/Incorporation.pdf" },
 ];
 
+const ANNUAL_REPORTS = [
+  { name: "Annual Report FY 2024–25", date: "FY 2024–25", size: "5.5 MB", path: "/Annual Reports/Audit report FY 24-25.pdf" },
+  { name: "Annual Report FY 2023–24", date: "FY 2023–24", size: "6.6 MB", path: "/Annual Reports/Audit report FY 23-24.pdf" },
+  { name: "Annual Report FY 2022–23", date: "FY 2022–23", size: "5.1 MB", path: "/Annual Reports/Audit Report FY 22-23.pdf" },
+  { name: "Annual Report FY 2021–22", date: "FY 2021–22", size: "6.6 MB", path: "/Annual Reports/Audit Report FY 21-22.pdf" },
+  { name: "Annual Report FY 2020–21", date: "FY 2020–21", size: "12.6 MB", path: "/Annual Reports/Audit Report FY 20-21.pdf" },
+];
+
+const ANNUAL_RETURNS = [
+  { name: "Annual Return FY 2024–25", date: "FY 2024–25", size: "1.1 MB", path: "/Annual Returns/MGT 7 FY 2024-25.pdf" },
+  { name: "Annual Return FY 2023–24", date: "FY 2023–24", size: "4.8 MB", path: "/Annual Returns/MGT_7 FY 2023-24.pdf" },
+  { name: "Annual Return FY 2022–23", date: "FY 2022–23", size: "4.3 MB", path: "/Annual Returns/MGT_7 FY 2022-23.pdf" },
+  { name: "Annual Return FY 2021–22", date: "FY 2021–22", size: "3.1 MB", path: "/Annual Returns/MGT_7 FY 2021-22.pdf" },
+  { name: "Annual Return FY 2020–21", date: "FY 2020–21", size: "1.6 MB", path: "/Annual Returns/MGT_7 FY 2020-21.pdf" },
+];
+
 const SECTIONS = [
+  {
+    id: "sec-annual-reports",
+    title: "Annual Reports",
+    docs: ANNUAL_REPORTS,
+    isPolicy: false,
+  },
+  {
+    id: "sec-annual-returns",
+    title: "Annual Returns",
+    docs: ANNUAL_RETURNS,
+    isPolicy: false,
+  },
   {
     id: "sec-policies",
     title: "Policies",
@@ -66,6 +94,10 @@ export default function OverviewContent() {
         tab === "shareholder"
       ) {
         targetId = "sec-policies";
+      } else if (tab === "annual-reports") {
+        targetId = "sec-annual-reports";
+      } else if (tab === "annual-returns") {
+        targetId = "sec-annual-returns";
       } else if (tab === "documents") {
         targetId = "sec-corporate";
       }
@@ -124,9 +156,9 @@ export default function OverviewContent() {
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                {section.docs.map((doc, idx) => (
+                {section.docs.map((doc) => (
                   <div
-                    key={idx}
+                    key={doc.path}
                     className="bg-white rounded-2xl border border-slate-100 p-5 flex items-center justify-between shadow-premium hover:shadow-premium-hover transition-all duration-300 group"
                   >
                     <div className="flex items-center gap-4">

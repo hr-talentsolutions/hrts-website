@@ -55,7 +55,7 @@ export const Contact = () => {
 
             <div className="space-y-8 mb-12">
               {[
-                { icon: Mail, label: "Email Us", value: "info@hrtalentsolutions.com", href: "mailto:info@hrtalentsolutions.com" },
+                { icon: Mail, label: "Email Us", value: "info@hrtalentsolutions.in", href: "mailto:info@hrtalentsolutions.in" },
                 { icon: Phone, label: "Call Us", value: "+91 7569067002", href: "tel:+917569067002" },
                 { icon: MapPin, label: "Visit Us", value: "Hyderabad, Telangana", href: "#" },
               ].map((item, i) => {

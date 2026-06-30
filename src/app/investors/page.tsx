@@ -3,7 +3,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { TrendingUp, Shield, FileText, ChevronRight } from "lucide-react";
+import {
+  Shield,
+  FileText,
+  ChevronRight,
+  BookOpen,
+  ClipboardCheck,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Investor Relations | HRTS Powering Workforce Solutions",
@@ -12,12 +18,21 @@ export const metadata: Metadata = {
 
 const INVESTOR_CARDS = [
   {
-    id: "card-overview",
-    title: "Investor Overview",
-    description: "Know more about HRTS, our business model, strengths and growth strategy.",
-    icon: TrendingUp,
-    href: "/investors/overview",
-    btnText: "Explore Overview",
+    id: "card-annual-reports",
+    title: "Annual Reports",
+    description: "View and download our audited annual reports from FY 2020–21 through FY 2024–25.",
+    icon: BookOpen,
+    href: "/investors/overview?tab=annual-reports",
+    btnText: "View Annual Reports",
+    type: "blue",
+  },
+  {
+    id: "card-annual-returns",
+    title: "Annual Returns",
+    description: "Access our filed annual returns from FY 2020–21 through FY 2024–25.",
+    icon: ClipboardCheck,
+    href: "/investors/overview?tab=annual-returns",
+    btnText: "View Annual Returns",
     type: "orange",
   },
   {
@@ -68,7 +83,7 @@ export default function InvestorsPage() {
 
         {/* Cards Section */}
         <section className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {INVESTOR_CARDS.map((card) => {
               const Icon = card.icon;
               const isOrange = card.type === "orange";
