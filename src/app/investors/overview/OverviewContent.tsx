@@ -24,7 +24,10 @@ const POLICIES = [
   { name: "Policy on Diversity on Board", date: "Jan 2025", size: "231 KB", path: "/policies/Policy_on_Diversity_on_Board.pdf" },
   { name: "Policy on Evaluation of Board and Independent Directors", date: "Jan 2025", size: "348 KB", path: "/policies/Policy_on_Evaluation_of_Board_and_Independent_Directors.pdf" },
   { name: "Policy on Identification of Group Companies", date: "Jan 2025", size: "159 KB", path: "/policies/Policy_on_Identification_of_Group_Companies.pdf" },
+  { name: "Policy on Identification of Material Creditors and Material Litigations", date: "Jan 2025", size: "1.2 MB", path: "/policies/Policy on Identification of Material Creditors and Material Litigations_.pdf" },
+  { name: "Policy on Prevention of Sexual Harassment at Workplace", date: "Jan 2025", size: "1.0 MB", path: "/policies/Policy on Prevention of Sexual Harrasment at Workplace_.pdf" },
   { name: "Policy for Determining Material Subsidiary", date: "Jan 2025", size: "150 KB", path: "/policies/olicy_for_determining_Material_Subsidiary.pdf" },
+  { name: "Whistle Blower Policy", date: "Jan 2025", size: "992 KB", path: "/policies/Whistle Blower Policy_.pdf" },
 ];
 
 const STATUTORY = [
